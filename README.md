@@ -1,9 +1,9 @@
 <p align="center">
-  <img src="./assets/signal.svg" alt="retro cyberpunk signal header" width="100%" />
+  <img src="./assets/command-prompt.svg" alt="retro command prompt profile" width="100%" />
 </p>
 
 ```txt
-root@github:/home/carlos # cat profile.txt
+C:\Users\Carlos> type profile.txt
 
 Login:       carlosdouradodev
 Name:        Carlos Dourado
@@ -11,20 +11,12 @@ Role:        security-minded builder
 Focus:       automation, OSINT, tooling, adversarial interfaces
 Shell:       PowerShell, Python, TypeScript
 Mode:        inspect assumptions, reduce blind spots, ship tools
-
-        ______________________________
-       /                              \
-      /  neon node, clean signal       \
-     /__________________________________\
-        ||      ||      ||      ||
-        ||  low trust systems   ||
-        ||______________________||
 ```
 
-`~/focus`
+`C:\Users\Carlos\focus`
 
 ```txt
-root@github:/home/carlos # cat focus.txt
+C:\Users\Carlos> type focus.txt
 
 [01] security tooling
 [02] OSINT workflows
@@ -36,7 +28,7 @@ root@github:/home/carlos # cat focus.txt
 `~/stack`
 
 ```txt
-root@github:/home/carlos # ls runtime
+C:\Users\Carlos> dir runtime
 
 Python
 TypeScript
@@ -50,7 +42,7 @@ Laravel
 `~/public`
 
 ```txt
-root@github:/home/carlos # cat public_ports.txt
+C:\Users\Carlos> netstat -ano
 
 80/tcp    amazonasfc       HTML interface
 443/tcp   toque-os-bio     CSS signal layer
@@ -62,7 +54,7 @@ root@github:/home/carlos # cat public_ports.txt
 [testes](https://github.com/carlosdouradodev/testes)
 
 ```txt
-root@github:/home/carlos # uptime
+C:\Users\Carlos> status
 
 status: online
 noise:  high
