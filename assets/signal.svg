@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" role="img" aria-labelledby="title desc">
+  <title id="title">Retro cyberpunk signal header</title>
+  <desc id="desc">Small animated neon signal bar with scanline and cursor.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#08000f"/>
+      <stop offset="0.5" stop-color="#061522"/>
+      <stop offset="1" stop-color="#160019"/>
+    </linearGradient>
+    <linearGradient id="scan" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#40f7ff" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#40f7ff" stop-opacity="0.85"/>
+      <stop offset="1" stop-color="#ff4fdd" stop-opacity="0"/>
+    </linearGradient>
+    <pattern id="lines" width="4" height="5" patternUnits="userSpaceOnUse">
+      <rect width="4" height="1" fill="#ffffff" opacity="0.055"/>
+    </pattern>
+    <filter id="glow" x="-25%" y="-80%" width="150%" height="260%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <style>
+      .mono { font-family: Consolas, Menlo, Monaco, 'Courier New', monospace; }
+      .cyan { fill: #40f7ff; }
+      .pink { fill: #ff4fdd; }
+      .green { fill: #43ff78; }
+      .muted { fill: #8fa3b4; }
+    </style>
+  </defs>
+
+  <rect width="1200" height="120" rx="14" fill="url(#bg)"/>
+  <rect x="18" y="18" width="1164" height="84" rx="10" fill="#050713" stroke="#28384a"/>
+  <path d="M30 84H356L382 58H804L830 32H1168" fill="none" stroke="#ff4fdd" stroke-width="2" opacity="0.65" filter="url(#glow)"/>
+  <path d="M30 32H330L356 58H780L806 84H1168" fill="none" stroke="#40f7ff" stroke-width="2" opacity="0.58" filter="url(#glow)"/>
+
+  <rect x="-260" y="24" width="240" height="72" fill="url(#scan)" opacity="0.45">
+    <animate attributeName="x" values="-260;1220" dur="4.8s" repeatCount="indefinite"/>
+  </rect>
+
+  <g class="mono" filter="url(#glow)">
+    <text x="46" y="52" class="pink" font-size="18">&gt;&gt; SIGNAL</text>
+    <text x="46" y="82" class="cyan" font-size="24">CARLOS_DOURADO // security tooling // automation // OSINT</text>
+    <text x="944" y="52" class="muted" font-size="17">SESSION:</text>
+    <text x="1038" y="52" class="green" font-size="17">ACTIVE</text>
+    <rect x="1110" y="39" width="11" height="16" fill="#43ff78">
+      <animate attributeName="opacity" values="1;1;0;0;1" dur="1.2s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <g opacity="0.22">
+    <rect x="46" y="94" width="78" height="4" fill="#ff4fdd"/>
+    <rect x="136" y="94" width="42" height="4" fill="#40f7ff"/>
+    <rect x="190" y="94" width="128" height="4" fill="#ff4fdd"/>
+    <rect x="330" y="94" width="52" height="4" fill="#40f7ff"/>
+    <rect x="394" y="94" width="96" height="4" fill="#ff4fdd"/>
+  </g>
+
+  <rect width="1200" height="120" rx="14" fill="url(#lines)"/>
+</svg>

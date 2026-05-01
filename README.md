@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="./assets/signal.svg" alt="retro cyberpunk signal header" width="100%" />
+</p>
+
 ```txt
 root@github:/home/carlos # cat profile.txt
 
