@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 136" role="img" aria-labelledby="title desc">
+  <title id="title">amazonasfc port card</title>
+  <desc id="desc">Retro cyberpunk repository card for amazonasfc.</desc>
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#110017"/>
+      <stop offset="1" stop-color="#001923"/>
+    </linearGradient>
+    <filter id="n"><feGaussianBlur stdDeviation="2.5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <style>.m{font-family:Consolas,Menlo,Monaco,'Courier New',monospace}.p{fill:#ff4fdd}.c{fill:#40f7ff}.w{fill:#f8fbff}.s{stroke:#ff2bd6}.t{stroke:#27f7ff}</style>
+  </defs>
+  <rect width="380" height="136" rx="14" fill="url(#g)" stroke="#ff2bd6" stroke-opacity=".55"/>
+  <path d="M18 110V34L42 12H344L364 32V104L340 124H38Z" fill="none" class="t" stroke-opacity=".45"/>
+  <text x="26" y="38" class="m p" font-size="16" font-weight="700">// PORT 80</text>
+  <text x="26" y="72" class="m w" font-size="25" font-weight="700" filter="url(#n)">amazonasfc</text>
+  <text x="26" y="104" class="m c" font-size="16">HTML interface</text>
+  <circle cx="330" cy="76" r="22" fill="none" class="s" stroke-width="3" filter="url(#n)"/>
+  <path d="M318 76H342M330 64V88" class="t" stroke-width="3" stroke-linecap="round"/>
+</svg>

@@ -1,31 +1,13 @@
 <p align="center">
-  <img src="./assets/terminal.svg" alt="Carlos Dourado retro cyberpunk profile banner" width="100%" />
+  <img src="./assets/terminal.svg" alt="Carlos Dourado retro cyberpunk profile terminal" width="100%" />
 </p>
 
-```txt
-[NEON NODE // CARLOS_DOURADO]
-security tooling | automation | OSINT | adversarial interfaces
-```
+<p align="center">
+  <a href="https://github.com/carlosdouradodev/amazonasfc"><img src="./assets/port-amazonasfc.svg" alt="amazonasfc" width="32%" /></a>
+  <a href="https://github.com/carlosdouradodev/toque-os-bio"><img src="./assets/port-toque-os-bio.svg" alt="toque-os-bio" width="32%" /></a>
+  <a href="https://github.com/carlosdouradodev/testes"><img src="./assets/port-testes.svg" alt="testes" width="32%" /></a>
+</p>
 
-### ./signal
-
-- low-trust workflow design
-- OSINT and security tooling
-- automation for messy data
-- retro web interfaces
-- systems that expose hidden behavior
-
-### ./stack.exe
-
-`Python` `TypeScript` `JavaScript` `HTML` `CSS` `PowerShell` `Laravel`
-
-### ./public_ports
-
-- [amazonasfc](https://github.com/carlosdouradodev/amazonasfc)
-- [toque-os-bio](https://github.com/carlosdouradodev/toque-os-bio)
-- [testes](https://github.com/carlosdouradodev/testes)
-
-```txt
-SYSTEM STATUS: online
-MODE: inspect assumptions, reduce blind spots, ship tools
-```
+<p align="center">
+  <img src="./assets/stack.svg" alt="Carlos Dourado stack console" width="100%" />
+</p>

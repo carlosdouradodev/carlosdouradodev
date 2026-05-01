@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 210" role="img" aria-labelledby="title desc">
+  <title id="title">Stack console</title>
+  <desc id="desc">Retro cyberpunk stack console listing technologies.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#08000f"/>
+      <stop offset=".52" stop-color="#061522"/>
+      <stop offset="1" stop-color="#170019"/>
+    </linearGradient>
+    <pattern id="scan" width="4" height="5" patternUnits="userSpaceOnUse">
+      <rect width="4" height="1" fill="#ffffff" opacity=".055"/>
+    </pattern>
+    <filter id="n"><feGaussianBlur stdDeviation="2.8" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <style>.m{font-family:Consolas,Menlo,Monaco,'Courier New',monospace}.p{fill:#ff4fdd}.c{fill:#40f7ff}.g{fill:#43ff78}.w{fill:#f8fbff}.s{stroke:#ff2bd6}.t{stroke:#27f7ff}</style>
+  </defs>
+  <rect width="1200" height="210" rx="18" fill="url(#bg)" stroke="#627083" stroke-opacity=".52"/>
+  <path d="M24 44L56 18H1144L1176 46V166L1146 192H54L24 164Z" fill="none" class="t" stroke-opacity=".48"/>
+  <path d="M24 44L56 18H420L446 8H762" fill="none" class="s" stroke-width="3" stroke-opacity=".72" filter="url(#n)"/>
+  <text x="58" y="58" class="m p" font-size="24" font-weight="700">// STACK.EXE</text>
+  <text x="58" y="98" class="m c" font-size="21">$ load runtime</text>
+  <text x="58" y="144" class="m w" font-size="25" filter="url(#n)">Python  TypeScript  JavaScript  HTML  CSS  PowerShell  Laravel</text>
+  <text x="58" y="178" class="m g" font-size="18">MODE: inspect assumptions, reduce blind spots, ship tools</text>
+  <rect x="1074" y="72" width="58" height="58" fill="none" class="s" stroke-width="3" filter="url(#n)"/>
+  <path d="M1090 102H1116M1103 89V115" class="t" stroke-width="4" stroke-linecap="round"/>
+  <rect width="1200" height="210" rx="18" fill="url(#scan)"/>
+</svg>
