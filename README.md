@@ -1,31 +1,31 @@
 <p align="center">
-  <img src="./assets/terminal.svg" alt="Carlos Dourado profile terminal banner" width="100%" />
+  <img src="./assets/terminal.svg" alt="Carlos Dourado retro cyberpunk profile banner" width="100%" />
 </p>
 
 ```txt
-carlos@github:~$ whoami
-security-minded builder focused on automation, OSINT, and interfaces for low-trust systems
+[NEON NODE // CARLOS_DOURADO]
+security tooling | automation | OSINT | adversarial interfaces
 ```
 
-### ./focus
+### ./signal
 
-- security tooling
-- OSINT workflows
-- automation scripts
-- adversarial interface design
-- data extraction from messy sources
+- low-trust workflow design
+- OSINT and security tooling
+- automation for messy data
+- retro web interfaces
+- systems that expose hidden behavior
 
-### ./stack
+### ./stack.exe
 
 `Python` `TypeScript` `JavaScript` `HTML` `CSS` `PowerShell` `Laravel`
 
-### ./public
+### ./public_ports
 
 - [amazonasfc](https://github.com/carlosdouradodev/amazonasfc)
 - [toque-os-bio](https://github.com/carlosdouradodev/toque-os-bio)
 - [testes](https://github.com/carlosdouradodev/testes)
 
 ```txt
-carlos@github:~$ status
-building small tools, inspecting assumptions, reducing blind spots
+SYSTEM STATUS: online
+MODE: inspect assumptions, reduce blind spots, ship tools
 ```

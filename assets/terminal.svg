@@ -1,37 +1,46 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" role="img" aria-labelledby="title desc">
-  <title id="title">Carlos Dourado terminal profile banner</title>
-  <desc id="desc">Dark terminal styled banner with green command text.</desc>
+  <title id="title">Carlos Dourado retro cyberpunk profile banner</title>
+  <desc id="desc">Retro cyberpunk banner with neon grid, city silhouettes, scanlines, and terminal text.</desc>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#07110d"/>
-      <stop offset="0.52" stop-color="#0d1517"/>
-      <stop offset="1" stop-color="#111827"/>
+      <stop offset="0" stop-color="#090014"/>
+      <stop offset="0.45" stop-color="#081321"/>
+      <stop offset="1" stop-color="#140016"/>
     </linearGradient>
-    <radialGradient id="scan" cx="50%" cy="15%" r="70%">
-      <stop offset="0" stop-color="#20f986" stop-opacity="0.18"/>
-      <stop offset="0.55" stop-color="#20f986" stop-opacity="0.04"/>
-      <stop offset="1" stop-color="#20f986" stop-opacity="0"/>
+    <radialGradient id="pinkGlow" cx="18%" cy="18%" r="58%">
+      <stop offset="0" stop-color="#ff2bd6" stop-opacity="0.34"/>
+      <stop offset="0.45" stop-color="#ff2bd6" stop-opacity="0.08"/>
+      <stop offset="1" stop-color="#ff2bd6" stop-opacity="0"/>
     </radialGradient>
-    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="3" result="blur"/>
+    <radialGradient id="cyanGlow" cx="86%" cy="18%" r="58%">
+      <stop offset="0" stop-color="#21f6ff" stop-opacity="0.30"/>
+      <stop offset="0.48" stop-color="#21f6ff" stop-opacity="0.08"/>
+      <stop offset="1" stop-color="#21f6ff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="gridFade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#21f6ff" stop-opacity="0.08"/>
+      <stop offset="1" stop-color="#ff2bd6" stop-opacity="0.38"/>
+    </linearGradient>
+    <pattern id="scanlines" width="4" height="4" patternUnits="userSpaceOnUse">
+      <rect width="4" height="1" fill="#ffffff" opacity="0.055"/>
+    </pattern>
+    <filter id="neon" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="3.6" result="blur"/>
       <feMerge>
         <feMergeNode in="blur"/>
         <feMergeNode in="SourceGraphic"/>
       </feMerge>
     </filter>
-    <pattern id="grid" width="34" height="34" patternUnits="userSpaceOnUse">
-      <path d="M 34 0 L 0 0 0 34" fill="none" stroke="#1f6f47" stroke-width="1" opacity="0.18"/>
-    </pattern>
     <style>
       .mono { font-family: Consolas, Menlo, Monaco, 'Courier New', monospace; }
-      .dim { fill: #7f9f92; }
-      .green { fill: #24f27b; }
-      .soft { fill: #c8facc; }
-      .muted { fill: #8b949e; }
-      .line { stroke: #24f27b; stroke-opacity: 0.24; }
-      .cursor {
-        animation: blink 1s step-end infinite;
-      }
+      .pink { fill: #ff4fdd; }
+      .cyan { fill: #37f8ff; }
+      .white { fill: #f7fbff; }
+      .muted { fill: #9aa4b2; }
+      .grid { stroke: url(#gridFade); stroke-width: 1.4; }
+      .hot { stroke: #ff2bd6; stroke-opacity: 0.72; }
+      .cold { stroke: #21f6ff; stroke-opacity: 0.62; }
+      .cursor { animation: blink 1s step-end infinite; }
       @keyframes blink {
         0%, 50% { opacity: 1; }
         51%, 100% { opacity: 0; }
@@ -40,33 +49,88 @@
   </defs>
 
   <rect width="1200" height="420" rx="22" fill="url(#bg)"/>
-  <rect width="1200" height="420" rx="22" fill="url(#scan)"/>
-  <rect width="1200" height="420" rx="22" fill="url(#grid)"/>
+  <rect width="1200" height="420" rx="22" fill="url(#pinkGlow)"/>
+  <rect width="1200" height="420" rx="22" fill="url(#cyanGlow)"/>
 
-  <g opacity="0.36">
-    <path class="line" d="M0 76 H1200"/>
-    <path class="line" d="M0 144 H1200"/>
-    <path class="line" d="M0 212 H1200"/>
-    <path class="line" d="M0 280 H1200"/>
-    <path class="line" d="M0 348 H1200"/>
+  <g opacity="0.42">
+    <path class="cold" d="M0 78 H1200" fill="none"/>
+    <path class="hot" d="M0 162 H1200" fill="none"/>
+    <path class="cold" d="M0 246 H1200" fill="none"/>
+    <path class="hot" d="M0 330 H1200" fill="none"/>
   </g>
 
-  <g transform="translate(78 58)">
-    <rect width="1044" height="304" rx="18" fill="#050a08" opacity="0.88" stroke="#2ea65f" stroke-opacity="0.38"/>
-    <rect width="1044" height="48" rx="18" fill="#101820"/>
-    <path d="M0 31 Q0 0 31 0 H1013 Q1044 0 1044 31 V48 H0 Z" fill="#101820"/>
-    <circle cx="28" cy="24" r="7" fill="#ff5f56"/>
-    <circle cx="52" cy="24" r="7" fill="#ffbd2e"/>
-    <circle cx="76" cy="24" r="7" fill="#27c93f"/>
-    <text x="112" y="31" class="mono muted" font-size="16">~/carlosdouradodev</text>
+  <g transform="translate(0 236)" opacity="0.88">
+    <path d="M0 184 H1200 V0 L0 0 Z" fill="#05020c" opacity="0.18"/>
+    <path class="grid" d="M0 184 H1200" fill="none"/>
+    <path class="grid" d="M44 184 L504 0" fill="none"/>
+    <path class="grid" d="M160 184 L540 0" fill="none"/>
+    <path class="grid" d="M278 184 L576 0" fill="none"/>
+    <path class="grid" d="M396 184 L612 0" fill="none"/>
+    <path class="grid" d="M516 184 L648 0" fill="none"/>
+    <path class="grid" d="M684 184 L552 0" fill="none"/>
+    <path class="grid" d="M804 184 L588 0" fill="none"/>
+    <path class="grid" d="M922 184 L624 0" fill="none"/>
+    <path class="grid" d="M1040 184 L660 0" fill="none"/>
+    <path class="grid" d="M1156 184 L696 0" fill="none"/>
+    <path class="grid" d="M0 156 H1200" fill="none"/>
+    <path class="grid" d="M0 126 H1200" fill="none"/>
+    <path class="grid" d="M0 98 H1200" fill="none"/>
+    <path class="grid" d="M0 74 H1200" fill="none"/>
+    <path class="grid" d="M0 52 H1200" fill="none"/>
+    <path class="grid" d="M0 32 H1200" fill="none"/>
+    <path class="grid" d="M0 14 H1200" fill="none"/>
+  </g>
 
-    <g class="mono" filter="url(#glow)">
-      <text x="44" y="92" class="green" font-size="24">$ whoami</text>
-      <text x="44" y="132" class="soft" font-size="42" font-weight="700">Carlos Dourado</text>
-      <text x="44" y="177" class="dim" font-size="24">security tooling | automation | OSINT | low-trust interfaces</text>
-      <text x="44" y="228" class="green" font-size="24">$ status</text>
-      <text x="44" y="266" class="soft" font-size="24">building tools that expose behavior and reduce blind spots</text>
-      <rect x="910" y="248" width="14" height="30" class="green cursor"/>
+  <g transform="translate(64 124)" opacity="0.88">
+    <rect x="0" y="56" width="42" height="94" fill="#0b0614"/>
+    <rect x="56" y="22" width="68" height="128" fill="#090815"/>
+    <rect x="142" y="74" width="46" height="76" fill="#0b0614"/>
+    <rect x="204" y="42" width="82" height="108" fill="#090815"/>
+    <rect x="956" y="64" width="48" height="86" fill="#090815"/>
+    <rect x="1020" y="26" width="72" height="124" fill="#0b0614"/>
+    <rect x="1110" y="82" width="44" height="68" fill="#090815"/>
+    <g fill="#21f6ff" opacity="0.46">
+      <rect x="68" y="44" width="8" height="8"/>
+      <rect x="94" y="70" width="8" height="8"/>
+      <rect x="226" y="64" width="8" height="8"/>
+      <rect x="254" y="96" width="8" height="8"/>
+      <rect x="1038" y="48" width="8" height="8"/>
+      <rect x="1064" y="88" width="8" height="8"/>
+    </g>
+    <g fill="#ff2bd6" opacity="0.40">
+      <rect x="18" y="82" width="8" height="8"/>
+      <rect x="166" y="102" width="8" height="8"/>
+      <rect x="974" y="92" width="8" height="8"/>
+      <rect x="1126" y="106" width="8" height="8"/>
     </g>
   </g>
+
+  <g transform="translate(92 62)">
+    <rect width="1016" height="252" rx="18" fill="#060713" opacity="0.92" stroke="#21f6ff" stroke-opacity="0.58"/>
+    <rect x="1" y="1" width="1014" height="250" rx="18" fill="none" stroke="#ff2bd6" stroke-opacity="0.30"/>
+    <rect width="1016" height="46" rx="18" fill="#111827"/>
+    <path d="M0 30 Q0 0 30 0 H986 Q1016 0 1016 30 V46 H0 Z" fill="#111827"/>
+    <circle cx="30" cy="23" r="7" fill="#ff2bd6"/>
+    <circle cx="56" cy="23" r="7" fill="#21f6ff"/>
+    <circle cx="82" cy="23" r="7" fill="#ffe66d"/>
+    <text x="116" y="30" class="mono muted" font-size="16">NEON_NODE://carlosdouradodev</text>
+
+    <g class="mono" filter="url(#neon)">
+      <text x="48" y="92" class="cyan" font-size="22">RUN ./identity_scan</text>
+      <text x="48" y="139" class="white" font-size="44" font-weight="700">CARLOS_DOURADO.EXE</text>
+      <text x="48" y="184" class="pink" font-size="24">security tooling | automation | OSINT | adversarial interfaces</text>
+      <text x="48" y="224" class="cyan" font-size="21">STATUS: online // SIGNAL: clean // NOISE: hostile</text>
+      <rect x="752" y="204" width="13" height="25" class="cyan cursor"/>
+    </g>
+
+    <g transform="translate(760 72)" opacity="0.95">
+      <rect width="208" height="132" rx="12" fill="#0a1020" stroke="#ff2bd6" stroke-opacity="0.42"/>
+      <text x="18" y="34" class="mono cyan" font-size="16">PORTS</text>
+      <text x="18" y="65" class="mono white" font-size="15">22  open  tools</text>
+      <text x="18" y="92" class="mono white" font-size="15">80  open  web</text>
+      <text x="18" y="119" class="mono white" font-size="15">443 open  signal</text>
+    </g>
+  </g>
+
+  <rect width="1200" height="420" rx="22" fill="url(#scanlines)"/>
 </svg>
